@@ -13,9 +13,9 @@ phases:
     commands:
       - echo Build started on `date`
       - echo pwd
-      - zip -r -D site.zip ui/*
+      - cd ui; zip -r ../site.zip *
       - echo after zip
-      - echo ls -al      
+      - echo ls      
   post_build:
     commands:
       - echo Build completed on `date`
