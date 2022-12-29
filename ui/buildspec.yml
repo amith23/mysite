@@ -13,7 +13,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo pwd
-      - cd ui; zip -r ../site.zip *
+      - zip -r site.zip ui/*
       - echo after zip
       - echo ls      
   post_build:
