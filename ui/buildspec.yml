@@ -13,11 +13,12 @@ phases:
     commands:
       - echo Build started on `date`
       - echo pwd
-      - echo ls -al
       - zip -r site.zip ui
+      - echo after zip
+      - echo ls -al      
   post_build:
     commands:
       - echo Build completed on `date`
 artifacts:
   files:
-    - target/site.zip
+    - site.zip
